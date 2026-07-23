@@ -42,14 +42,14 @@ export default function AboutUsPage() {
     <main className="min-h-screen bg-[#f8fafc] text-[#10243e]">
       {/* Navigation */}
       <header className="border-b border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+        <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-3 px-3 py-3 sm:px-5 sm:py-4 lg:px-8">
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/samvaad-logo.png"
               alt="SAMVAAD logo"
               width={60}
               height={60}
-              className="h-14 w-14 object-contain"
+              className="h-14 w-14 rounded-full border border-slate-200 bg-white object-cover p-1"
             />
 
             <div>
@@ -63,7 +63,7 @@ export default function AboutUsPage() {
             </div>
           </Link>
 
-          <nav className="flex items-center gap-4 text-sm font-semibold text-slate-700 sm:gap-7">
+          <nav className="flex items-center gap-2 text-[11px] font-semibold text-slate-700 sm:gap-5 sm:text-sm lg:gap-7">
             <Link href="/" className="transition hover:text-[#e96f17]">
               Home
             </Link>
@@ -113,7 +113,7 @@ export default function AboutUsPage() {
                 alt="SAMVAAD organisation logo"
                 width={320}
                 height={320}
-                className="relative h-full w-full object-contain"
+                className="relative h-full w-full rounded-full bg-white object-cover"
               />
             </div>
           </div>
@@ -448,7 +448,7 @@ export default function AboutUsPage() {
                 alt="SAMVAAD logo"
                 width={58}
                 height={58}
-                className="h-14 w-14 bg-white object-contain"
+                className="h-14 w-14 rounded-full border border-white/20 bg-white object-cover p-1"
               />
 
               <div>

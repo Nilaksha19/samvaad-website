@@ -36,28 +36,28 @@ export default function Home() {
     <main className="min-h-screen bg-[#f8fafc] text-[#10243e]">
       {/* Navigation Bar */}
       <header className="border-b border-slate-200 bg-white/95">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+        <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-3 px-3 py-3 sm:px-5 sm:py-4 lg:px-8">
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/samvaad-logo.png"
-              alt="SAMVAAD logo"
-              width={62}
-              height={62}
-              className="h-14 w-14 rounded-full object-contain"
-              preload
-            />
+             src="/samvaad-logo.png"
+             alt="SAMVAAD logo"
+             width={62}
+             height={62}
+             className="h-14 w-14 rounded-full border border-slate-200 bg-white object-cover p-1"
+             preload
+             />
 
             <div>
               <p className="text-xl font-bold tracking-[0.16em] text-[#082b57]">
                 SAMVAAD
               </p>
-              <p className="hidden text-xs text-slate-500 sm:block">
+              <p className="hidden text-xs text-slate-500 md:block">
                 Informing Youth, Empowering Nation
               </p>
             </div>
           </Link>
 
-          <nav className="flex items-center gap-4 text-sm font-semibold text-slate-700 sm:gap-7">
+          <nav className="flex items-center gap-2 text-[11px] font-semibold text-slate-700 sm:gap-5 sm:text-sm lg:gap-7">
             <Link
               href="/"
               className="text-[#e96f17] transition hover:text-[#082b57]"
@@ -88,7 +88,7 @@ export default function Home() {
         <div className="absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-green-100/60 blur-3xl" />
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:py-24">
-          <div>
+          <div className="text-center lg:text-left">
             <div className="mb-6 inline-flex rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#c95c10]">
               Youth • Current Affairs • Civic Awareness
             </div>
@@ -100,13 +100,13 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8 lg:mx-0">
               SAMVAAD helps young people understand national, international
               and regional developments through clear information, meaningful
               context and responsible dialogue.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
               <Link
                 href="/latest-news"
                 className="rounded-full bg-[#082b57] px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-blue-950/15 transition hover:-translate-y-0.5 hover:bg-[#123f70]"
@@ -124,16 +124,16 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <div className="relative flex h-[340px] w-[340px] items-center justify-center rounded-full border border-slate-100 bg-white p-8 shadow-[0_30px_80px_rgba(8,43,87,0.14)] sm:h-[420px] sm:w-[420px]">
+            <div className="relative flex h-[270px] w-[270px] max-w-full items-center justify-center rounded-full border border-slate-100 bg-white p-6 shadow-[0_30px_80px_rgba(8,43,87,0.14)] sm:h-[340px] sm:w-[340px] sm:p-8 lg:h-[420px] lg:w-[420px]">
               <div className="absolute inset-5 rounded-full border border-dashed border-orange-200" />
 
               <Image
-                src="/samvaad-logo.png"
-                alt="SAMVAAD — Informing Youth, Empowering Nation"
-                width={420}
-                height={420}
-                className="relative h-full w-full object-contain"
-                preload
+              src="/samvaad-logo.png"
+              alt="SAMVAAD — Informing Youth, Empowering Nation"
+              width={420}
+              height={420}
+              className="relative h-full w-full rounded-full bg-white object-cover"
+              preload
               />
             </div>
           </div>
@@ -265,11 +265,11 @@ export default function Home() {
           <div>
             <div className="flex items-center gap-3">
               <Image
-                src="/samvaad-logo.png"
-                alt="SAMVAAD logo"
-                width={58}
-                height={58}
-                className="h-14 w-14 rounded-full bg-white object-contain"
+              src="/samvaad-logo.png"
+              alt="SAMVAAD logo"
+              width={58}
+              height={58}
+              className="h-14 w-14 rounded-full border border-white/20 bg-white object-cover p-1"
               />
 
               <div>

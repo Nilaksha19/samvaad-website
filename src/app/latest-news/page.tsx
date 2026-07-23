@@ -46,7 +46,7 @@ export default function LatestNewsPage() {
               alt="SAMVAAD logo"
               width={60}
               height={60}
-              className="h-14 w-14 object-contain"
+              className="h-14 w-14 rounded-full border border-slate-200 bg-white object-cover p-1"
             />
 
             <div>
@@ -60,7 +60,7 @@ export default function LatestNewsPage() {
             </div>
           </Link>
 
-          <nav className="flex items-center gap-4 text-sm font-semibold text-slate-700 sm:gap-7">
+          <nav className="flex items-center gap-2 text-[11px] font-semibold text-slate-700 sm:gap-5 sm:text-sm lg:gap-7">
             <Link href="/" className="transition hover:text-[#e96f17]">
               Home
             </Link>
@@ -188,9 +188,9 @@ export default function LatestNewsPage() {
               <Image
                 src="/samvaad-logo.png"
                 alt="SAMVAAD logo"
-                width={58}
-                height={58}
-                className="h-14 w-14 bg-white object-contain"
+                width={60}
+                height={60}
+                className="h-14 w-14 rounded-full border border-slate-200 bg-white object-cover p-1"
               />
 
               <div>
