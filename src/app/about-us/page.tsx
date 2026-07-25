@@ -57,7 +57,7 @@ export default function AboutUsPage() {
                 SAMVAAD
               </p>
 
-              <p className="hidden text-xs text-slate-500 sm:block">
+              <p className="hidden text-xs text-slate-500 md:block">
                 Informing Youth, Empowering Nation
               </p>
             </div>
@@ -77,6 +77,12 @@ export default function AboutUsPage() {
 
             <Link href="/about-us" className="text-[#e96f17]">
               About Us
+            </Link>
+            <Link
+                href="/admin"
+                className="rounded-full bg-[#082b57] px-3 py-2 text-white transition hover:bg-[#e96f17] sm:px-4"
+            >
+              Admin
             </Link>
           </nav>
         </div>
@@ -222,59 +228,6 @@ export default function AboutUsPage() {
           </div>
 
           <div className="mt-16 grid gap-10 lg:grid-cols-2">
-            {/* Nilaksha Sinha Roy */}
-            <article className="overflow-hidden rounded-[2rem] border border-slate-200 bg-[#f8fafc] shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
-              <div className="relative h-[520px] overflow-hidden">
-                <Image
-                  src="/nilaksha-v2.png"
-                  alt="Nilaksha Sinha Roy, Co-Founder of SAMVAAD"
-                  fill
-                  loading="eager"
-                  fetchPriority="high"
-                  quality={90}
-                  className="object-cover object-center"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-[#061d38]/95 via-[#061d38]/10 to-transparent" />
-
-                <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
-                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-orange-300">
-                    Co-Founder
-                  </p>
-
-                  <h3 className="mt-2 text-3xl font-bold">
-                    Nilaksha Sinha Roy
-                  </h3>
-
-                  <p className="mt-2 text-sm text-blue-100">
-                    Vision, Research and Public Engagement
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-7">
-                <p className="leading-8 text-slate-600">
-                  Nilaksha Sinha Roy is a student leader, public speaker and
-                  current-affairs enthusiast with a strong interest in
-                  governance, public policy, infrastructure and national
-                  development.
-                </p>
-
-                <p className="mt-4 leading-8 text-slate-600">
-                  His vision for SAMVAAD is to make complex events
-                  understandable and meaningful for young people. Through
-                  research, discussion and responsible communication, he seeks
-                  to build a generation that is aware of the present and
-                  prepared to contribute towards the future.
-                </p>
-
-                <blockquote className="mt-6 border-l-4 border-[#e96f17] pl-5 text-lg font-semibold italic leading-8 text-[#082b57]">
-                  “An informed generation does not merely observe the future—it
-                  helps shape it.”
-                </blockquote>
-              </div>
-            </article>
 
             {/* Arka Chowdhury */}
             <article className="overflow-hidden rounded-[2rem] border border-slate-200 bg-[#f8fafc] shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
@@ -319,6 +272,59 @@ export default function AboutUsPage() {
                 <blockquote className="mt-6 border-l-4 border-[#11823b] pl-5 text-lg font-semibold italic leading-8 text-[#082b57]">
                   “Dialogue becomes powerful when it informs minds and connects
                   people.”
+                </blockquote>
+              </div>
+            </article>
+
+            {/* Nilaksha Sinha Roy */}
+            <article className="overflow-hidden rounded-[2rem] border border-slate-200 bg-[#f8fafc] shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <div className="relative h-[520px] overflow-hidden">
+                <Image
+                  src="/nilaksha-v2.png"
+                  alt="Nilaksha Sinha Roy, Co-Founder of SAMVAAD"
+                  fill
+                  loading="eager"
+                  fetchPriority="high"
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-[#061d38]/95 via-[#061d38]/10 to-transparent" />
+
+                <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-orange-300">
+                    Co-Founder
+                  </p>
+
+                  <h3 className="mt-2 text-3xl font-bold">
+                    Nilaksha Sinha Roy
+                  </h3>
+
+                  <p className="mt-2 text-sm text-blue-100">
+                    Vision, Research and Public Engagement
+                  </p>
+                </div>
+              </div>
+
+              <div className="p-7">
+                <p className="leading-8 text-slate-600">
+                  Nilaksha Sinha Roy is a student leader, public speaker and
+                  current-affairs enthusiast with a strong interest in
+                  governance, public policy, infrastructure and national
+                  development.
+                </p>
+
+                <p className="mt-4 leading-8 text-slate-600">
+                  His vision for SAMVAAD is to make complex events
+                  understandable and meaningful for young people. Through
+                  research, discussion and responsible communication, he seeks
+                  to build a generation that is aware of the present and
+                  prepared to contribute towards the future.
+                </p>
+
+                <blockquote className="mt-6 border-l-4 border-[#e96f17] pl-5 text-lg font-semibold italic leading-8 text-[#082b57]">
+                  “An informed generation does not merely observe the future—it
+                  helps shape it.”
                 </blockquote>
               </div>
             </article>

@@ -78,6 +78,12 @@ export default function Home() {
             >
               About Us
             </Link>
+            <Link
+                href="/admin"
+                className="rounded-full bg-[#082b57] px-3 py-2 text-white transition hover:bg-[#e96f17] sm:px-4"
+            >
+              Admin
+            </Link>
           </nav>
         </div>
       </header>

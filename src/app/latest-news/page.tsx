@@ -39,7 +39,7 @@ export default function LatestNewsPage() {
     <main className="min-h-screen bg-[#f8fafc] text-[#10243e]">
       {/* Navigation */}
       <header className="border-b border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+        <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-3 px-3 py-3 sm:px-5 sm:py-4 lg:px-8">
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/samvaad-logo.png"
@@ -54,7 +54,7 @@ export default function LatestNewsPage() {
                 SAMVAAD
               </p>
 
-              <p className="hidden text-xs text-slate-500 sm:block">
+              <p className="hidden text-xs text-slate-500 md:block">
                 Informing Youth, Empowering Nation
               </p>
             </div>
@@ -75,6 +75,12 @@ export default function LatestNewsPage() {
             >
               About Us
             </Link>
+            <Link
+              href="/admin"
+              className="rounded-full bg-[#082b57] px-3 py-2 text-white transition hover:bg-[#e96f17] sm:px-4"
+            >
+               Admin
+          </Link>
           </nav>
         </div>
       </header>
